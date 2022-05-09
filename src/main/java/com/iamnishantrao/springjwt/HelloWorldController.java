@@ -27,7 +27,7 @@ public class HelloWorldController {
     @Autowired
     private JwtUtility jwtUtility;
 
-    @RequestMapping("/hello")
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String helloWorld() {
         return "<h1>hello world from iamnishantrao!</h1>";
     }
